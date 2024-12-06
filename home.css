@@ -1,0 +1,138 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  cursor: default;
+}
+
+body{
+  background: hsla(266, 100%, 3%, 0.975);
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10% 0 10%;
+}
+
+header h1{
+  font-size: 2.1em;
+}
+
+header h1:hover{
+  color: white;
+  text-shadow: 0 0 40px white;
+}
+
+.navbar a{
+  display: inline-block;
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 1.2em;
+  
+}
+
+.navbar a:hover,
+.navbar .active{
+  color: #6bdcff;
+}
+
+.navbar a:hover{
+  text-shadow: 0 0 40px #9ee8ff;
+}
+
+section{
+  margin: 5% 10%;
+  display: flex;
+  align-items: center;
+}
+
+section h2{
+  font-size: 2em;
+  margin: 0 0 0 0;
+  
+}
+
+
+section p{
+  font-size: 0.9em;
+}
+
+section img{
+  max-width: 300px;    
+  max-height: 300px;
+}
+
+
+/* section span a{
+  color: #0ef;
+  text-decoration: none;
+  transition: .5s;
+}
+
+section span a:hover{
+  text-shadow: 0 0 40px #fff;
+  color: white;
+} */
+
+@keyframes slideBottom{
+  from{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop{
+  from{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight{
+  from{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft{
+  from{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(0);
+  }
+  
+  50%{
+    transform: translateY(50px);
+  }
+  
+  100%{
+    transform: translateY(0);
+  }
+}
